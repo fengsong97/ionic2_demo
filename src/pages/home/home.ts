@@ -6,7 +6,15 @@ import { NavController,ActionSheetController,AlertController,LoadingController} 
   templateUrl: 'home.html'
 })
 export class HomePage {
- // constructor(public navCtrl: NavController,public actionSheetCtrl: ActionSheetController) {
+  testRadioOpen: boolean;
+  testRadioResult;
+
+  testCheckboxOpen = false;
+  testCheckboxResult = "";
+      
+
+
+
   constructor(public actionSheetCtrl: ActionSheetController,public alertCtrl: AlertController,public loadingCtrl: LoadingController) {
 
   	// testRadioOpen2:string ="false";
@@ -124,8 +132,8 @@ export class HomePage {
       text: 'OK',
       handler: data => {
       	// this.myIcon="af"
-        // this.testRadioOpen = false;
-        // this.testRadioResult = data;
+        this.testRadioOpen = false;
+        this.testRadioResult = data;
       }
     });
     alert.present();
@@ -153,8 +161,8 @@ export class HomePage {
       text: 'Okay',
       handler: data => {
         console.log('Checkbox data:', data);
-        // this.testCheckboxOpen = false;
-        // this.testCheckboxResult = data;
+        this.testCheckboxOpen = false;
+        this.testCheckboxResult = data;
       }
     });
     alert.present();
