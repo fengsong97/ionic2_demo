@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import {  ActionSheetController ,AlertController} from 'ionic-angular';
+// import { NavControlle, ActionSheetController } from 'ionic-angular';
 
 @Component({
   selector: 'page-about',
@@ -7,8 +8,17 @@ import { NavController } from 'ionic-angular';
 })
 export class AboutPage {
 
-  constructor(public navCtrl: NavController) {
+ // use the home icon
+  myIcon: string = "home";
 
-  }
+  
+  brightness: number = 20;
+  contrast: number = 0;
+  warmth: number = 1300;
+  structure: any = { lower: 33, upper: 60 };
+  text: number = 0;
 
+
+  pet: string = "puppies";
+  isAndroid: boolean = false;
 }

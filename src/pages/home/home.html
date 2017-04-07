@@ -4,14 +4,293 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content padding >
+ <button ion-button block (click)="presentActionSheet()">Show Action Sheet</button>
+ <button ion-button block (click)="showAlert()">showAlert</button>
+ <button ion-button block (click)="showPrompt()">showPrompt</button>
+ <button ion-button block (click)="showConfirm()">showConfirm</button>
+ <button ion-button block (click)="showRadio()">showRadio</button>
+ <button ion-button block (click)="showCheckbox()">showCheckbox</button>
+ <button ion-button block (click)="presentLoading()">showLoading</button>
+
+
+<ion-item>
+  <ion-icon name="logo-twitter" item-left></ion-icon>
+  Followers
+  <ion-badge color="secondary" item-right>260k</ion-badge>
+</ion-item>
+
+<!--  -->
+
+<button ion-button color="light">Light</button>
+<button ion-button>Default</button>
+<button ion-button color="secondary">Secondary</button>
+<button ion-button color="danger">Danger</button>
+<button ion-button color="dark">Dark</button>
+<button ion-button color="light" outline>Light Outline</button>
+<button ion-button outline>Primary Outline</button>
+<button ion-button color="secondary" outline>Secondary Outline</button>
+<button ion-button color="danger" outline>Danger Outline</button>
+<button ion-button color="dark" outline>Dark Outline</button>
+<button ion-button color="light" clear>Light Clear</button>
+<button ion-button clear>Primary Clear</button>
+<button ion-button color="secondary" clear>Secondary Clear</button>
+<button ion-button color="danger" clear>Danger Clear</button>
+<button ion-button color="dark" clear>Dark Clear</button>
+<button ion-button color="light" round>Light Round</button>
+<button ion-button round>Primary Round</button>
+<button ion-button color="secondary" round>Secondary Round</button>
+<button ion-button color="danger" round>Danger Round</button>
+<button ion-button color="dark" round>Dark Round</button>
+<button ion-button block>Block Button</button>
+<button ion-button full>Full Button</button>
+<button ion-button small>Small</button>
+<button ion-button>Default</button>
+<button ion-button large>Large</button>
+<!-- Float the icon left -->
+<button ion-button icon-left>
+  <ion-icon name="home"></ion-icon>
+  Left Icon
+</button>
+
+<!-- Float the icon right -->
+<button ion-button icon-right>
+  Right Icon
+  <ion-icon name="home"></ion-icon>
+</button>
+
+<!-- Only icon (no text) -->
+<button ion-button icon-only>
+  <ion-icon name="home"></ion-icon>
+</button>
+
+
+
+<!--  -->
+
+<ion-card>
+
+  <ion-card-header>
+    Card Header
+  </ion-card-header>
+
+  <ion-card-content>
+    <!-- Add card content here! -->
+  </ion-card-content>
+
+</ion-card>
+
+
+<ion-card>
+  <ion-card-header>
+    Header
+  </ion-card-header>
+  <ion-card-content>
+    The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+  </ion-card-content>
+</ion-card>
+
+<!--  -->
+<ion-card>
+  <ion-card-header>
+    Explore Nearby
+  </ion-card-header>
+
+  <ion-list>
+    <button ion-item>
+      <ion-icon name="cart" item-left></ion-icon>
+      Shopping
+    </button>
+
+    <button ion-item>
+      <ion-icon name="medical" item-left></ion-icon>
+      Hospital
+    </button>
+
+    <button ion-item>
+      <ion-icon name="cafe" item-left></ion-icon>
+      Cafe
+    </button>
+
+    <button ion-item>
+      <ion-icon name="paw" item-left></ion-icon>
+      Dog Park
+    </button>
+
+    <button ion-item>
+      <ion-icon name="beer" item-left></ion-icon>
+      Pub
+    </button>
+
+    <button ion-item>
+      <ion-icon name="planet" item-left></ion-icon>
+      Space
+    </button>
+
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <img src="assets/img/saopaolo.png"/>
+  <ion-card-content>
+    <ion-card-title>
+      Nine Inch Nails Live
+      </ion-card-title>
+    <p>
+      The most popular industrial group ever, and largely
+      responsible for bringing the music to a mass audience.
+    </p>
+  </ion-card-content>
+</ion-card>
+<!--  -->
+
+<div class="card-background-page">
+<ion-card >
+    <img src="assets/img/saopaolo.png"/>
+    <div class="card-title">São Paulo</div>
+    <div class="card-subtitle">41 Listings</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/img/saopaolo.png"/>
+    <div class="card-title">Amsterdam</div>
+    <div class="card-subtitle">64 Listings</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/img/saopaolo.png"/>
+    <div class="card-title">San Francisco</div>
+    <div class="card-subtitle">72 Listings</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/img/saopaolo.png"/>
+    <div class="card-title">Madison</div>
+    <div class="card-subtitle">28 Listings</div>
+  </ion-card>
+</div>
+
+
+
+
+<!--  -->
+<ion-card>
+
+  <ion-item>
+    <ion-avatar item-left>
+      <img src="assets/img/saopaolo.png">
+    </ion-avatar>
+    <h2>Marty McFly</h2>
+    <p>November 5, 1955</p>
+  </ion-item>
+
+  <img src="assets/img/saopaolo.png">
+
+  <ion-card-content>
+    <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+  </ion-card-content>
+
+  <ion-row>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="thumbs-up"></ion-icon>
+        <div>12 Likes</div>
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="text"></ion-icon>
+        <div>4 Comments</div>
+      </button>
+    </ion-col>
+    <ion-col center text-center>
+      <ion-note>
+        11h ago
+      </ion-note>
+    </ion-col>
+  </ion-row>
+
+</ion-card>
+
+
+<!--  -->
+<ion-card>
+
+  <img src="assets/img/saopaolo.png">
+  <ion-fab right top>
+    <button ion-fab>
+      <ion-icon name="pin"></ion-icon>
+    </button>
+  </ion-fab>
+
+  <ion-item>
+    <ion-icon name="football" item-left large></ion-icon>
+    <h2>Museum of Football</h2>
+    <p>11 N. Way St, Madison, WI 53703</p>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon name="wine" item-left large ></ion-icon>
+    <h2>Institute of Fine Cocktails</h2>
+    <p>14 S. Hop Avenue, Madison, WI 53703</p>
+  </ion-item>
+
+  <ion-item>
+    <span item-left>18 min</span>
+    <span item-left>(2.6 mi)</span>
+    <button ion-button icon-left clear item-right>
+      <ion-icon name="navigate"></ion-icon>
+      Start
+    </button>
+  </ion-item>
+
+</ion-card>
+
+<!--  -->
+<ion-item>
+  <ion-label>Daenerys Targaryen</ion-label>
+  <ion-checkbox color="dark" checked="true"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>Arya Stark</ion-label>
+  <ion-checkbox disabled="true"></ion-checkbox>
+</ion-item>
+
+
+
+<!--  -->
+<ion-item>
+  <ion-label>Start Time</ion-label>
+  <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A"></ion-datetime>
+</ion-item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </ion-content>

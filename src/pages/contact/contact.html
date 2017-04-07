@@ -7,11 +7,59 @@
 </ion-header>
 
 <ion-content>
+<button ion-button block (click)="showToast('top')">Show Toast Top Position</button>
+  <button ion-button block (click)="showToast('middle')">Show Toast Middle Position</button>
+  <button ion-button block (click)="showToast('bottom')">Show Toast Bottom Position</button>
+  <button ion-button block (click)="showLongToast()">Show Long Toast</button>
+  <button ion-button block (click)="showToastWithCloseButton()">Show Toast W/ Close Button</button>
+<ion-slides pager>
+
+  <ion-slide style="background-color: green">
+    <h2>Slide 1</h2>
+  </ion-slide>
+
+  <ion-slide style="background-color: blue">
+    <h2>Slide 2</h2>
+  </ion-slide>
+
+  <ion-slide style="background-color: red">
+    <h2>Slide 3</h2>
+  </ion-slide>
+
+</ion-slides>
+<ion-toolbar>
+    <ion-title>Toolbar</ion-title>
+  </ion-toolbar>
+
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+  <ion-item>
+    <ion-label>Gaming</ion-label>
+    <ion-select [(ngModel)]="gaming">
+      <ion-option value="nes">NES</ion-option>
+      <ion-option value="n64">Nintendo64</ion-option>
+      <ion-option value="ps">PlayStation</ion-option>
+      <ion-option value="genesis">Sega Genesis</ion-option>
+      <ion-option value="saturn">Sega Saturn</ion-option>
+      <ion-option value="snes">SNES</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+<ion-list>
+  <ion-item>
+    <ion-label>Toppings</ion-label>
+    <ion-select [(ngModel)]="toppings" multiple="true" cancelText="Nah" okText="Okay!">
+      <ion-option value="bacon" selected="true">Bacon</ion-option>
+      <ion-option value="olives">Black Olives</ion-option>
+      <ion-option value="xcheese" selected="true">Extra Cheese</ion-option>
+      <ion-option value="peppers">Green Peppers</ion-option>
+      <ion-option value="mushrooms">Mushrooms</ion-option>
+      <ion-option value="onions">Onions</ion-option>
+      <ion-option value="pepperoni">Pepperoni</ion-option>
+      <ion-option value="pineapple">Pineapple</ion-option>
+      <ion-option value="sausage">Sausage</ion-option>
+      <ion-option value="Spinach">Spinach</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
 </ion-content>
